@@ -7,6 +7,12 @@
 
 .ce-chat-list {
   background-color: rgb(240, 240, 240) !important;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important;
+}
+
+.ce-chat-list::-webkit-scrollbar {
+  display: none;
 }
 
 .ce-chats-container {
@@ -46,6 +52,12 @@
 
 .ce-settings {
   background-color: rgb(240, 240, 240) !important;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important;
+}
+
+.ce-settings::-webkit-scrollbar {
+  display: none;
 }
 
 .ce-autocomplete-input {
