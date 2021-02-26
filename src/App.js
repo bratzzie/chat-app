@@ -1,10 +1,17 @@
 import React from 'react'
 import {ChatEngine} from 'react-chat-engine'
 
-export const App = () => {
+import ChatFeed from './components/ChatFeed'
+
+ const App = () => {
     return (
-        <div>
-            
-        </div>
+        <ChatEngine 
+        height="100vh"
+        projectID=""
+        userName=""
+        userSecret=""
+        renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
+        />
     )
 }
+export default App;
